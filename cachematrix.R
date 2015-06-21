@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
     message("getting cached data.")
     return(m)
   }
-  # otherwise get the matrix, caclulate the inverse and store it in cache
+  # Otherwise get the matrix, caclulate the inverse and store it in cache
   data <- x$get()
   m <- solve(data)
   x$setinverse(m)
